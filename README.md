@@ -27,17 +27,7 @@ A fully responsive React-based Movie Booking application with role-based access 
 
  📁 Folder Structure
 
- src/
-│
-├── components/
-│ ├── context/ # AuthContext
-│ ├── pages/ # Pages like Login, Movies, Bookings
-│ └── pages/admin/ # (if used separately)
-├── App.js
-└── index.js
-
-
-### 🛠️ Installation
+ 🛠️ Installation
 
 1. Clone the repository:
    ```bash
