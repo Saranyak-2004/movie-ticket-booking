@@ -31,7 +31,7 @@ A fully responsive React-based Movie Booking application with role-based access 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/movie-booking-app.git
+   git clone https://github.com/Saranyak-2004/movie-booking-app.git
    cd movie-booking-app
 2.Install dependencies:
        npm install
