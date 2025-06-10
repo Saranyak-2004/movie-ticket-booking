@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+🎬 Movie Booking Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully responsive React-based Movie Booking application with role-based access for users and admins. Users can browse and book movies, while admins can manage movie listings using a clean interface.
 
-## Available Scripts
 
-In the project directory, you can run:
+🔥 Features
 
-### `npm start`
+### 👥 Role-Based Access
+- User:
+  - View list of movies
+  - Book movies (mock behavior)
+  - View booking history (mock)
+- **Admin**:
+  - Add new movies
+  - Delete existing movies
+  - Manage all movies in one dashboard
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+💡 Built With
+- React JS
+- React Router DOM
+- React Bootstrap
+- Context API (for Auth)
+- Mock data (no backend/API)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
+🚀 Getting Started
 
-### `npm test`
+ 📁 Folder Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ src/
+│
+├── components/
+│ ├── context/ # AuthContext
+│ ├── pages/ # Pages like Login, Movies, Bookings
+│ └── pages/admin/ # (if used separately)
+├── App.js
+└── index.js
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🛠️ Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/movie-booking-app.git
+   cd movie-booking-app
+2.Install dependencies:
+       npm install
+3.Start the app:
+        npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+        
+🔐 Admin & User Login
+Mock credentials to test login roles:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Role	Email	Password
+Admin	admin@example.com	admin123
+User	user@example.com	user123
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Login logic is implemented in AuthContext.js using mock validation.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🧠 Future Enhancements
+         Integrate real backend & authentication (Firebase / Node.js)
+         Payment gateway integration
+         Theatre management
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+         
+📸 Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+         Login Page:
+              ![image](https://github.com/user-attachments/assets/787f5d53-aad9-4ce9-9c3f-b02c2dcaa16f)
+         movies page as user:
+              ![image](https://github.com/user-attachments/assets/6c0b22cd-f83a-4005-ae5a-075eb34fcd25)
+        booking page :
+              ![image](https://github.com/user-attachments/assets/5f68c34c-41be-494a-af3d-525227146643)
+        booking history:
+              ![image](https://github.com/user-attachments/assets/523dfe6c-a3c6-43c4-8751-3af313394833)
+        admin login:
+               ![image](https://github.com/user-attachments/assets/44f05795-ed02-4dd8-a4c3-412e2f552110)
 
-### Code Splitting
+ 
+                  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
